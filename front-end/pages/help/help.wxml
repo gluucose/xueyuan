@@ -1,0 +1,18 @@
+<!--pages/help/help.wxml-->
+<view class="main">
+    <view class="box box1">
+        <view class="title">
+            <view>什么是学苑？</view>
+              <van-icon name="question-o" color="#ffffff" size="30"/>
+        </view>
+        <view class="desc">学苑是一款采用爬虫技术对川大校内各网页内容进行实时收集更新，并按来源及内容进行分类管理的微信小程序。</view>
+    </view>
+
+    <view class="box box2">
+        <view class="title">
+            <view>如何订阅？</view>
+            <van-icon name="notes-o" color="#ffffff" size="30"/>
+        </view>
+        <view class="desc">在订阅栏中选择四川大学的各类网站等，点击“+”即可完成订阅（点击“-”退订）。目前学苑暂时不支持自定义的网站订阅。</view>
+    </view>
+</view>

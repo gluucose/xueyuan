@@ -1,0 +1,26 @@
+<!--pages/article/article.wxml-->
+<view class="main">
+<view class="header">
+<view class="title">{{article.title}}</view>
+<view class="note">
+    <view class="time">{{article.source_name}}•{{article.date}}</view>
+    <view class="icon" bindtap="changeCollect">
+        <view wx:if="{{is_collected}}"><van-icon name="star" color="#FCDA3A" size="20px"/></view>
+        <view wx:else><van-icon name="star" color="#333333" size="20px"/></view>
+    </view>
+</view>
+<view class="divLine"></view>
+</view>
+
+<scroll-view class="scroll-block" scroll-y>
+<view class="scroll">
+    <view class="scrbox">
+    <text class="txt">
+        {{article.content}}
+    </text>
+    <image class='pic' wx:if="{{article.pic_link}}" mode="aspectFit" src="{{article.pic_link}}"></image>
+    </view>
+</view>
+</scroll-view>
+</view>
+

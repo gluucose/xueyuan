@@ -1,0 +1,72 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/collect/collect",
+                    "pathName": "pages/collect/collect",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/article/article",
+                    "pathName": "pages/article/article",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/collect/collect",
+                    "pathName": "pages/collect/collect",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/home/home",
+                    "pathName": "pages/home/home",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/authorize/authorize",
+                    "pathName": "pages/authorize/authorize",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/search/search",
+                    "pathName": "pages/search/search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/mine/mine",
+                    "pathName": "pages/mine/mine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/subscribe/subscribe",
+                    "pathName": "pages/subscribe/subscribe",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/searchFull",
+                    "pathName": "pages/searchFull/searchFull",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

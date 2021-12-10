@@ -1,0 +1,132 @@
+/* pages/mine/mine.wxss */
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.weui-input{
+    margin-left: 10rpx;
+}
+
+.bg-top {
+    height:45%;
+    background: url("https://s3.bmp.ovh/imgs/2021/11/63e7ebdf25bc9462.jpg") no-repeat;
+    opacity: 0.80;
+    /* border-bottom: 2PX solid #ccc; */
+}
+
+.mine {
+    position: absolute;
+    top: 32%;
+    left:5%;
+    width: 680rpx;
+    height: 230rpx;
+    border-radius: 30rpx;
+    box-shadow: 5px 5px 5px rgb(175, 173, 173);
+    background-color: white;
+    text-align: auto;
+    color: #333333;
+}
+
+.menu {
+    margin-top: 120rpx;
+    color: #333333;
+    font-size: larger;
+    margin-left: 20rpx;
+    
+}
+
+.name {
+    font-size: 38rpx;
+    font-weight: 600;
+    padding: 10rpx;
+    margin-top: 4%;
+    margin-left: 7%;
+}
+
+.label {
+    padding: 20rpx;
+    display: flex;
+    /* padding-left: 6rpx; */
+    font-size: small;
+    color: #7d7d7e;
+    margin-left: 20rpx;
+}
+
+.label view {
+    padding-left: 20rpx;
+}
+
+.aaa {
+    display: flex;
+    color: #333333;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.desc{
+    color: #969798;
+    font-size: small;
+}
+
+.little-box {
+    text-align: center;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+
+.desc {
+    font-size:small;
+    padding-top: 10rpx;
+}
+
+.pic-avtor {
+    width: 180rpx;
+    height: 180rpx;
+    border: 2px solid #ccc;
+    border-radius: 100rpx;
+    position: absolute;
+    top: -15%;
+    right: 5%;
+    overflow: hidden;
+}
+
+.act {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.contact-desc {
+    width: 500rpx;
+    margin: 50rpx auto;
+    text-align: center;
+    font-size: small;
+}
+
+.contact-btn {
+    margin: 30rpx auto;
+    display: flex;
+    align-items: center;
+}
+
+.exit {
+    position: absolute;
+    top:5%;
+    right: 5%;
+}
+
+.edit{
+    height: 60rpx;
+    width: 110rpx;
+    font-size: x-small;
+    color: #333333;
+    /* margin-top: 20rpx; */
+    margin-left: 100rpx;
+}
+
+.picker{
+    margin-left: -18rpx;
+}

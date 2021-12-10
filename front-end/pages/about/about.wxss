@@ -1,0 +1,55 @@
+/* pages/about/about.wxss */
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#e7e7e7;
+}
+
+.team{
+   padding: 8%;
+   margin-top: 5rpx;
+   background-color: white;
+   color: #777777;
+}
+
+.contact{
+    padding: 8%;
+    margin-top: 30rpx;
+    background-color: white;
+    color: #777777;
+}
+
+.thanks{
+    padding: 8%;
+    margin-top: 30rpx;
+    background-color: white;
+    color: #777777;
+}
+
+.header{
+    font-weight: 900;
+    font-size: x-large;
+    color: #333333;
+}
+
+.divLine{
+    margin-top: 20rpx;
+    background: #eeeded;
+    width: 100%;
+    height: 2rpx;
+   }
+
+   .group{
+       margin-top: 20rpx;
+   }
+
+   .nexttolabel{
+       float: right;
+       width: 90%;
+   }
+
+   .img{
+       width: 50rpx;
+       height: 50rpx;
+   }

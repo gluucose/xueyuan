@@ -1,0 +1,110 @@
+<!--pages/subscribe/subscribe.wxml-->
+<view class="main">
+    <scroll-view class="scroll-block" scroll-y>
+    <view class="scroll">
+        <view class="scrbox">
+            <view class="group">
+            <image src="/statics/icons/subscribe.png" class='img'></image >
+            <view class="nexttolabel">我的订阅</view>
+            <scroll-view class="scroll-block" scroll-x>
+            <view class="scroll-x">
+            <view class="site">
+            <view class="colblock" wx:for="{{allSiteList}}" wx:for-item="item" wx:for-index="idx" data-id="{{idx}}" bindtap="unsubscribe">
+                <view wx:if="{{allSiteList[idx].isSubscribed==true && idx==0}}" >
+                    <image src="/statics/images/jwc.png" class='ximg' lazy-load></image>
+                    <view class="txt">教务处</view>
+                    <image src="/statics/icons/subtract.png" class='bimg' lazy-load></image>
+                </view>
+
+                <view wx:if="{{allSiteList[idx].isSubscribed==true && idx==1}}" >
+                    <image src="/statics/images/lib.png" class='ximg' lazy-load></image>
+                    <view class="txt">图书馆</view>
+                    <image src="/statics/icons/subtract.png" class='bimg' lazy-load></image>
+                </view>
+                
+                <view wx:if="{{allSiteList[idx].isSubscribed==true && idx==2}}" >
+                    <image src="/statics/images/cs.jpg" class='ximg' lazy-load></image>
+                    <view class="txt">计算机学院</view>
+                    <image src="/statics/icons/subtract.png" class='bimg' lazy-load></image>
+                </view>
+
+                <view wx:if="{{allSiteList[idx].isSubscribed==true && idx==3}}" >
+                    <image src="/statics/images/se.jpg" class='ximg' lazy-load></image>
+                    <view class="txt">软件学院</view>
+                    <image src="/statics/icons/subtract.png" class='bimg' lazy-load></image>
+                </view>
+
+                <view wx:if="{{allSiteList[idx].isSubscribed==true && idx==4}}" >
+                    <image src="/statics/images/wa.png" class='ximg' lazy-load></image>
+                    <view class="txt">网安学院</view>
+                    <image src="/statics/icons/subtract.png" class='bimg' lazy-load></image>
+                </view>
+  
+            </view>
+            </view>
+            </view>
+            </scroll-view>
+            </view>
+        </view>
+
+        <view class="scrbox">
+            <view class="group">
+            <image src="/statics/icons/manage.png" class='img'></image >
+            <view class="nexttolabel">行政管理网站</view>
+            <scroll-view class="scroll-block" scroll-x>
+            <view class="scroll-x">
+            <view class="site">
+                <view class="colblock" data-id="0" bindtap="toSubscribe">
+                <image src="/statics/images/jwc.png" class='ximg' lazy-load></image>
+                <view class="txt">教务处</view>
+                <image wx:if="{{allSiteList[0].isSubscribed==false}}" src="/statics/icons/add-a.png" class='bimg' lazy-load></image>
+                <image wx:else src="/statics/icons/add.png" class='bimg' lazy-load></image>
+                </view>
+
+                <view class="colblock" data-id="1" bindtap="toSubscribe">
+                <image src="/statics/images/lib.png" class='ximg' lazy-load></image>
+                <view class="txt">图书馆</view>
+                <image wx:if="{{allSiteList[1].isSubscribed==false}}" src="/statics/icons/add-a.png" class='bimg' lazy-load></image>
+                <image wx:else src="/statics/icons/add.png" class='bimg' lazy-load></image>
+                </view>
+
+            </view>
+            </view>
+            </scroll-view>
+            </view>
+        </view>
+
+        <view class="scrbox">
+            <view class="group">
+            <image src="/statics/icons/dept.png" class='img'></image >
+            <view class="nexttolabel">学院网站</view>
+            <view class="site">
+            <view class="colblock" data-id="2" bindtap="toSubscribe">
+                <image src="/statics/images/cs.jpg" class='ximg' lazy-load></image>
+                <view class="txt">计算机学院</view>
+                <image wx:if="{{allSiteList[2].isSubscribed==false}}" src="/statics/icons/add-a.png" class='bimg' lazy-load></image>
+                <image wx:else src="/statics/icons/add.png" class='bimg' lazy-load></image>
+            </view>
+
+            <view class="colblock" data-id="3" bindtap="toSubscribe">
+                <image src="/statics/images/se.jpg" class='ximg' lazy-load></image>
+                <view class="txt">软件学院</view>
+                <image wx:if="{{allSiteList[3].isSubscribed==false}}" src="/statics/icons/add-a.png" class='bimg' lazy-load></image>
+                <image wx:else src="/statics/icons/add.png" class='bimg' lazy-load></image>
+            </view>
+
+            <view class="colblock" data-id="4" bindtap="toSubscribe">
+                <image src="/statics/images/wa.png" class='ximg' lazy-load></image>
+                <view class="txt">网安学院</view>
+                <image wx:if="{{allSiteList[4].isSubscribed==false}}" src="/statics/icons/add-a.png" class='bimg' lazy-load></image>
+                <image wx:else src="/statics/icons/add.png" class='bimg' lazy-load></image>
+            </view>
+            </view>
+            </view>
+        </view>
+
+    </view>
+    </scroll-view>
+</view>
+
+

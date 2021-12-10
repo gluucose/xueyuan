@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/search/search",
+    "pages/searchFull/searchFull",
+    "pages/authorize/authorize",
+    "pages/collect/collect",
+    "pages/article/article",
+    "pages/subscribe/subscribe",
+    "pages/about/about",
+    "pages/help/help",
+    "pages/mine/mine",
+    
+    
+    "pages/home/home",
+
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/statics/icons/home-u.png",
+        "selectedIconPath":"/statics/icons/home-s.png"
+      },
+      {
+        "pagePath": "pages/subscribe/subscribe",
+        "text": "订阅",
+        "iconPath": "./statics/icons/subscribe-u.png",
+        "selectedIconPath":"./statics/icons/subscribe-s.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./statics/icons/person-u.png",
+        "selectedIconPath":"./statics/icons/person-s.png"
+      }
+    ],
+    "selectedColor" : "#1296db"
+  },
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "学苑",
+    "navigationBarTextStyle":"black"
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

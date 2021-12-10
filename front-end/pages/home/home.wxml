@@ -1,0 +1,53 @@
+<!--pages/home/home.wxml-->
+<!-- 搜索框 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:focus="onClick" bind:cancel="onCancel"/>
+  
+<!-- 顶部导航栏 -->
+<view class="top-tab flex-wrp flex-tab " >
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+
+<!-- 行政管理网站内容 -->
+ <scroll-view scroll-y="true" class="main-box" style="height:1100rpx" bindscrolltolower="scrolltolower" hidden="{{currentNavtab==0 ? '' : true}}">
+  <view class="ctnt0"  wx:for="{{article}}" wx:key="article_id" data-index="{{item.article_id}}" bindtap="toFullArticle" >
+    <view class="article_item">
+      <view class="article_title">
+        {{item.title}}
+        <view class="divLine"></view>
+      </view>
+      <view class="article_content">
+        {{item.content}}
+      </view>
+      <view class="article_foot">
+        <view class="date">{{item.date}}</view>
+        <view wx:if="{{item.is_collected}}" class="icon"><van-icon name="star" color="#FCDA3A" size="20px"/></view>
+        <view wx:else class="icon"><van-icon name="star" color="#333333" size="20px"/></view>
+      </view>
+    </view>  
+  </view>
+</scroll-view>
+
+
+  <!-- 学院网站内容 -->
+  <scroll-view scroll-y="true" class="main-box" style="height:1100rpx" bindscrolltolower="scrolltolower" hidden="{{currentNavtab==1 ? '' : true}}">
+  <view class="ctnt0"  wx:for="{{article}}" wx:key="article_id" data-index="{{item.article_id}}" bindtap="toFullArticle">
+    <view class="article_item">
+      <view class="article_title">
+        {{item.title}}
+        <view class="divLine"></view>
+      </view>
+      <view class="article_content">
+        {{item.content}}
+      </view>
+      <view class="article_foot">
+        <view class="date">{{item.date}}</view>
+        <view wx:if="{{item.is_collected}}" class="icon"><van-icon name="star" color="#FCDA3A" size="20px"/></view>
+        <view wx:else class="icon"><van-icon name="star" color="#333333" size="20px"/></view>
+      </view>
+    </view>  
+  </view>
+</scroll-view>
+
+

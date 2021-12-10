@@ -1,0 +1,35 @@
+<!--pages/searchFull/searchFull.wxml-->
+<view class="main">
+    <!-- 搜索框 -->
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:search="onSearch" bind:cancel="onCancel"/>
+    <!-- 无结果 -->
+    <view class="none" wx:if="{{noneview}}">
+        <image src="/statics/images/no_result.png" mode="widthFix" style="width:20%"></image>
+        <text class="nostyle">抱歉，没有相关搜索结果</text>
+    </view>
+    <!-- 有结果 -->
+    <view class="result" wx:else>
+    <!-- 内容列表 -->
+    <scroll-view scroll-y="true" class="main-box" style="height:1300rpx" bindscrolltolower="scrolltolower" >
+    <view class="ct" wx:for="{{article}}" wx:key="article_id" data-index="{{item.article_id}}" bindtap="toFullArticle">
+    <view class="article_item">
+      <view class="article_title">
+        {{item.title}}
+      <view class="divLine"></view>
+      </view>
+      <view class="article_content">
+        {{item.content}}
+      </view>
+      <view class="article_foot">
+        <view class="date">{{item.date}}</view>
+        <view wx:if="{{item.is_collected}}" class="icon"><van-icon name="star" color="#FCDA3A" size="20px"/></view>
+        <view wx:else class="icon"><van-icon name="star" color="#333333" size="20px"/></view>
+      </view>
+      </view>
+    </view>  
+    </scroll-view>
+
+  </view>
+</view>
+
+

@@ -1,0 +1,36 @@
+<!--pages/about/about.wxml-->
+<view class="main">
+    <view class="team">
+    <view class="header">开发团队</view>
+    <view class="divLine"></view>
+    <text > 
+        学苑的开发团队由来自四川大学的三名2019级本科生组成，包括：
+        崔嘉琪 & 刘晶玉 & 杨扬
+        开源地址：https://gitee.com/database_team/xueyuan
+    </text>
+    </view>
+
+    <view class="contact">
+    <view class="header">联系我们</view>
+    <view class="divLine"></view>
+    <view class="group">
+        <image src="/statics/icons/email.png" class='img'></image >
+        <view class="nexttolabel">E-mail</view>
+        2359696652@qq.com 
+    </view>
+    <view class="group">
+        <image src="/statics/icons/qq.png" class='img'></image >
+        <view class="nexttolabel">通过QQ</view>
+        2359696652 or 751535624
+    </view>
+    </view>
+
+    <view class="thanks">
+    <view class="header">致谢</view>
+    <view class="divLine"></view>
+    <text> 
+        感谢四川大学计算机学院 现代软件工程课程设计任课教师和助教。
+        感谢Github、B站大学和CSDN大佬的提供的教学帖、视频和轮子。
+    </text>
+    </view>
+</view>

@@ -1,0 +1,36 @@
+<!--pages/mine/mine.wxml-->
+<view class="main">
+    <view class="bg-top">bg</view>
+    <view class="menu">
+        <van-cell-group inset>
+            <van-cell value="{{collectnum}}" icon="star" size='large' boarder is-link url="/pages/collect/collect" border="{{ true }}">
+                <view slot="title"><view class="van-cell-text">收藏记录</view></view>
+            </van-cell>
+            <van-cell value="" icon="question" size='large' boarder is-link url="/pages/help/help">
+                <view slot="title"><view class="van-cell-text">帮助</view></view>
+            </van-cell>
+            <van-cell value="" icon="manager" size='large' boarder is-link url="/pages/about/about">
+                <view slot="title"><view class="van-cell-text">关于</view></view>
+            </van-cell>
+        </van-cell-group>
+    </view>
+    <view class="mine">
+        <view class="name">
+            <open-data type="userNickName"></open-data>
+        </view>
+
+    <view class="label">
+        <!-- <van-icon color="#E7C212" name="label-o" /> -->
+        <view class="section__title"></view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+        学院：{{array[index]}}
+        </view>
+        </picker>
+    </view>
+
+    <view class="pic-avtor">
+        <open-data type="userAvatarUrl" class="pic"></open-data>
+    </view>
+    </view>
+</view>

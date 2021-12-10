@@ -1,0 +1,117 @@
+/* pages/subscribe/subscribe.wxss */
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#e7e7e7;
+}
+
+.subscribed{
+   padding: 8%;
+   margin-top: 5rpx;
+   background-color: white;
+   color: #777777;
+}
+
+.contact{
+    padding: 8%;
+    margin-top: 30rpx;
+    background-color: white;
+    color: #777777;
+}
+
+.thanks{
+    padding: 8%;
+    margin-top: 30rpx;
+    background-color: white;
+    color: #777777;
+}
+
+.header{
+    font-weight: 900;
+    font-size: x-large;
+    color: #333333;
+}
+
+.divLine{
+    margin-top: 20rpx;
+    background: #eeeded;
+    width: 100%;
+    height: 2rpx;
+   }
+
+   .group{
+       margin-top: 30rpx;
+       margin-left: 50rpx;
+   }
+
+   .nexttolabel{
+       float: right;
+       width: 90%;
+       font-size: 15px;
+       color: #777777;
+       font-weight: 700;
+   }
+
+   .img{
+       width: 50rpx;
+       height: 50rpx;
+   }
+
+   .scroll{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+   }
+
+   .scroll-x{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+   .scrbox{
+       width: 100%;
+       height: 400rpx;
+       background: white;
+       margin-top: 5rpx;
+       border-radius: 30rpx;
+   }
+
+   .scrbox-x{
+    width: 450rpx;
+    height: 100%;
+    background: white;
+    margin-top: 5rpx;
+    border-radius: 30rpx;
+}
+
+   .site{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+   }
+
+   .colblock{
+       margin-left: 25rpx;
+       margin-right: 25rpx;
+   }
+
+   .ximg{
+    margin-top: 10rpx;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 30rpx;
+}
+
+.bimg{
+    margin-top: 20rpx;
+    margin-left: 50rpx;
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.txt{
+    text-align: center;
+    font-size: 12px;
+}

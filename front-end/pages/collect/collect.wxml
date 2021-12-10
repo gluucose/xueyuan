@@ -1,0 +1,23 @@
+<!--pages/collect/collect.wxml-->
+<!-- 搜索框 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:focus="onClick"/>
+<!-- 内容列表 -->
+<scroll-view scroll-y="true" class="main-box" bindscrolltoupper="upper">
+<view class="ct" wx:for="{{article}}" wx:key="article_id" data-index="{{item.article_id}}" bindtap="toFullArticle">
+    <view class="article_item">
+      <view class="article_title">
+        {{item.title}}
+        <view class="divLine"></view>
+      </view>
+      <view class="article_content">
+        {{item.content}}
+      </view>
+      <view class="article_foot">
+        <view class="date">{{item.date}}</view>
+        <view class="icon"><van-icon name="star" color="#FCDA3A" size="20px"/></view>
+      </view>
+    </view>
+</view>  
+</scroll-view>
+
+
